@@ -903,7 +903,7 @@ textarea.holder-text-style {
 
 .modal-checkbox-link {
   padding-left: 4px;
-  color: var(--accent-color);
+  color: var(--header-link-color);
 }
 
 .modal-checkbox span {
