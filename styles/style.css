@@ -851,6 +851,8 @@ footer.header-logo {
   height: 100%;
   border: none;
   resize: none;
+  padding-left: 30px;
+  outline: none;
 }
 .input-wrap .input-img {
   transition-property: fill;
@@ -895,6 +897,9 @@ footer.header-logo {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.textarea-wrap .formput {
+  padding: 0;
 }
 
 textarea.holder-text-style {
