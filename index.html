@@ -377,13 +377,15 @@
         </div>
         <div class="footer-mail-box">
           <p class="mail-box-heading">Подпишитесь на рассылку</p>
-          <input type="email" name="email" placeholder="E-mail" />
-          <button class="footer-mail-send" type="submit">
-            Подписаться
-            <svg class="footer-button-icon" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-send"></use>
-            </svg>
-          </button>
+          <form class="form-online">
+            <input class="online-input" type="email" name="user-mail" id="user-mail" placeholder="E-mail" />
+            <button type="submit" class="hero-button online-btn">
+              Подписаться
+              <svg class="online-btn-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -446,13 +448,14 @@
             class="callback-checkbox visually-hidden"
           />
 
-          <label for="modal-checkbox" class="modal-checkbox"
-            ><span>
-              <svg width="11px" height="8px">
-                <use href="./images/symbol-defs.svg#icon-check"></use>
+          <label for="checkbox" class="form-checkbox-label">
+            <input type="checkbox" name="checkbox" id="checkbox" class="form-checkbox visually-hidden" />
+            <span class="checkbox">
+              <svg width="16" height="16">
+                <use href="./images/symbol-defs.svg#icon-Vector" class=""></use>
               </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю <a href="" class="modal-checkbox-link">Условия договора</a>
+            Соглашаюсь с рассылкой и принимаю <a href="" class="form-link">Условия договора</a>
           </label>
 
           <button class="btn form-btn" type="submit">Отправить</button>
