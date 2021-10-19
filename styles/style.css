@@ -859,6 +859,7 @@ label.textarea-label {
   padding-left: 30px;
   outline: none;
 }
+
 .input-wrap .input-img {
   transition-property: fill;
   transition-duration: 250ms;
