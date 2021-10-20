@@ -657,7 +657,7 @@ footer.header-logo {
   padding: 40px;
   transform: translate(-50%, -50%);
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   background: var(--white-color-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -839,13 +839,6 @@ footer.header-logo {
   display: block;
   position: relative;
   height: 40px;
-
-  border: 1.4px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 label.textarea-label {
   margin-bottom: 20px;
@@ -858,8 +851,17 @@ label.textarea-label {
   resize: none;
   padding-left: 30px;
   outline: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1.4px solid rgba(33, 33, 33, 0.2);
 }
-
+.formput:focus,
+.formput:hover {
+  border-color: rgba(24, 140, 232, 1);
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .input-wrap .input-img {
   transition-property: fill;
   transition-duration: 250ms;
@@ -885,7 +887,7 @@ label.textarea-label {
   resize: none;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  outline: 0px;
+
   transition: border-color var(--timing-duration) var(--timing-function);
 }
 .name {
@@ -914,6 +916,8 @@ textarea.holder-text-style {
   line-height: calc(16 / 14);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  border: 1.4px solid rgba(33, 33, 33, 0.2);
+  padding: 0;
 }
 /* castom input*/
 .form-link {
@@ -972,8 +976,10 @@ textarea.holder-text-style {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*footer mail*/
+
 .form-online {
   display: flex;
+  width: 100%;
 }
 .online-input {
   padding: 15px 16px;
