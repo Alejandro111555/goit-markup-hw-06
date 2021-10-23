@@ -689,9 +689,6 @@ footer.header-logo {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition-property: visibility;
-  transition-duration: 2500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*выезжающее окно в портфолио*/
@@ -868,8 +865,8 @@ label.textarea-label {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-wrap:hover .input-img,
-.input-wrap:focus .input-img {
+.formput:hover + .input-img,
+.formput:focus + .input-img {
   fill: var(--header-link-color);
 }
 .input-wrap:focus,
@@ -910,6 +907,7 @@ label.textarea-label {
 }
 
 textarea.holder-text-style {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -917,7 +915,7 @@ textarea.holder-text-style {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   border: 1.4px solid rgba(33, 33, 33, 0.2);
-  padding: 0;
+  padding: 12px 16px;
 }
 /* castom input*/
 .form-link {
