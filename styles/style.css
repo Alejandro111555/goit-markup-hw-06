@@ -283,11 +283,12 @@ body {
 
 .footer-address {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
   color: var(--white-color-text);
 }
 .footer-adress-hero {
   font-style: inherit;
+  padding-right: 14px;
 }
 
 .footer-contakts-link {
@@ -591,6 +592,10 @@ footer.header-logo {
 .footer-container {
   display: flex;
   align-items: baseline;
+}
+footer-mail-box {
+  width: 100%;
+  margin-left: auto;
 }
 .footer-social-heading {
   font-weight: 700;
